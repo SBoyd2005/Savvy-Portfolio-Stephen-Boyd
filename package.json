@@ -1,0 +1,24 @@
+{
+  "name": "StephenBoyd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SBoyd2005/Savvy-Portfolio-Stephen-Boyd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SBoyd2005/Savvy-Portfolio-Stephen-Boyd/issues"
+  },
+  "homepage": "https://github.com/SBoyd2005/Savvy-Portfolio-Stephen-Boyd#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}
