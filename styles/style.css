@@ -1,8 +1,8 @@
-* {border: black 10px solid;}
 .container {background-color: lightblue;
-max-width: 780px; margin: 0 auto; position:center;}
+max-width: 960px; margin: 0 auto; position:center;}
 .tomatify{height: 100px;
     padding: 20 30 40;
 }
 .p{color: orange; font-size:50px;}
-.li{color: yellow;}
+li{display:inline;}
+li:first-child {margin-right:50px;}
