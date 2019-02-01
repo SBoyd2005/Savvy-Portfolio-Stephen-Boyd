@@ -1,5 +1,8 @@
 
-.body{background-color: lightblue}
-.tomatify{color:tomato;}
+.container {background-color: lightblue;
+max-width: 960px; margin: 0 auto;}
+.tomatify{height: 100px;
+    padding: 20 30 40;
+}
 .p{color: orange; font-size:50px;}
 .li{color: yellow;}
