@@ -11,7 +11,7 @@ a:link {color:gold;}
 h1{color:gold;}
 footer{color:gold; margin: 0 auto; position:center;}
 content{color:gold; text-align: center;}
-figure {color:white;}
+figure {color:white; text-transform: uppercase;}
 li:hover {
     background:orangered;
 }
