@@ -17,7 +17,7 @@ body {
 .container {
     background-color: black;
     color: gold;
-    width: 960px;
+    width: 97%;
     margin: auto;
     position: center;
     border: 3px solid;
@@ -28,14 +28,14 @@ body {
 }
 
 .center {
-    padding: 2px;
+    padding: 2px auto;
     border: 3px solid orangered;
-    margin-left: auto;
-    margin-right: auto;
     height: 400px;
     width: 400px;
+    margin: 0 auto;
     position: relative;
     border: 3px solid gold;
+    display: block;
 }
 
 .tomatify {
@@ -61,10 +61,25 @@ h1 {
     color: gold;
 }
 
-footer {
+#navigation > ul > li > ul > li,
+#footer {
     color: gold;
     margin: 0 auto;
     position: center;
+    display: list-item;
+}
+
+#navigation > ul > li > ul {
+    position: fixed;
+    background-color: orangered;
+    left: 185px;
+    top: 30px;
+    list-style: none;
+    display: none;
+}
+
+#navigation > ul > li:hover > ul {
+    display: block;
 }
 
 #content {
@@ -80,5 +95,24 @@ figure {
 }
 
 li:hover {
-    background: orangered;
+    background: gray;
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#navigation > ul > li {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#header {
+    padding-top: 50px;
+    text-align: center;
+    background-color: gray;
 }
