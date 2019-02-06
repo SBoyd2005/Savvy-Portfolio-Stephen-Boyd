@@ -1,17 +1,84 @@
-.container {background-color:gray; color:white;
-max-width: 1280px; margin:auto; position:center; border:3px orangered solid;}
-img {padding: 2px; border:3px solid orangered; margin-left:auto; margin-right:auto; box-align:center;}
-.tomatify{height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+body {
+    background-color: orangered;
+    border: 10px solid gold;
+    font-size: 20px;
+}
+
+.container {
+    background-color: black;
+    color: gold;
+    width: 960px;
+    margin: auto;
+    position: center;
+    border: 3px solid;
+}
+
+.container > div {
+    padding-top: 10px;
+}
+
+.center {
+    padding: 2px;
+    border: 3px solid orangered;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 3px solid gold;
+}
+
+.tomatify {
+    height: 100px;
     padding: 20 30 40;
 }
-.p{color: orange; font-size:50px;}
-li{display:inline;}
-li:first-child {margin-right:50px;}
-a:link {color:gold;}
-h1{color:gold;}
-footer{color:gold; margin: 0 auto; position:center;}
-content{color:gold; text-align: center;}
-figure {color:white; text-transform: uppercase;}
-li:hover {
+
+
+.p {
+    color: orange;
+    font-size: 50px;
+}
+
+li {
+    display: inline;
+}
+
+li:first-child {
+    margin-right: 50px;
+}
+
+h1 {
+    color: gold;
+}
+
+footer {
+    color: gold;
+    margin: 0 auto;
+    position: center;
+}
+
+#content {
     background:orangered;
+    text-align: center;
+    color: white;
+}
+
+figure {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li:hover {
+    background: orangered;
 }

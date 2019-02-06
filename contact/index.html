@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Contact Me</title>
 </head>
-<body> 
-    <div class="container">
-        <div id="navigation">
+
+<body>
+    <div id="navigation">
+        <div class="container">
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog/index.html">Blog</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
+                <li><a href="../">Home</a></li>
+                <li><a href="../blog/">Blog</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        <div id="header">
+    </div>
+    <br>
+    <div id="header">
+        <div class="container">
             <h1>Contact Information</h1>
         </div>
-
-    <div class="content">
-        <form action="" method="POST">
-            <label for="First Name">First Name</label>
-            <input type="text" id="fname" placeholder="Obviously, we need your first name!" required>
-
-            <label for="Last Name">Last Name</label>
-            <input type="text" id="lname" placeholder="We Need a Last Name" required>
-
-            <label for="email">Email</label>
-            <input type="email" name="" id="email">
-
-            <label for="Phone">Phone Number</label>
-            <input type="tel" name"Phone" id="Phone">
-            <br>
-            <br>
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Please Enter Your Message Here"></textarea>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Clear">
-        </form>
     </div>
+    <br>
+    <div id="content">
+        <div class="container">
+            <form action="" method="POST">
+                <label for="First Name">First Name</label>
+                <input type="text" id="fname" placeholder="Please Enter Your First Name" required>
+
+                <label for="Last Name">Last Name</label>
+                <input type="text" id="lname" placeholder="Please Enter YourLast Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="" id="email" placeholder="Please Enter Your E-mail">
+
+                <label for="Phone">Phone</label>
+                <input type="tel" name="Phone" placeholder="(---)--- ----" id="Phone">
+                <br>
+                <br>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Please Enter Your Message Here"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
         <div id="footer">&copy;2019 Stephen Boyd Saint Louis, Missouri</div>
-    </div>   
-</div>
+        <ul>
+            <li><a href="https://github.com/SBoyd2005">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/stephen-boyd-02b02170/">Linkedin</a></li>
+        </ul>
+    </div>
+    </div>
+    </div>
 </body>
+
 </html>
