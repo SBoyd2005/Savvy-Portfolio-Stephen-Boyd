@@ -1,72 +1,69 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-    color: gold;
-}
-
 body {
-    background-color: orangered;
+    background-image: url(https://amp.businessinsider.com/images/58f4e5ebf40daef5008b4bb4-960-640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     border: 10px solid gold;
     font-size: 20px;
     display: grid;
     grid-template-rows: min-content min-content auto min-content;
+    grid-auto-columns: (min-content, 15vw) auto;
+    grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
     margin: 0;
-    min-height: 100%;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     background-color: black;
     color: gold;
-    margin: auto;
-    position: center;
-    border: 3px solid;
-}
-
-.container > div {
-    padding-top: 10px;
-}
-
-.center {
-    padding: 2px auto;
-    border: 3px solid orangered;
-    height: 400px;
-    width: 400px;
     margin: 0 auto;
-    position: relative;
-    border: 3px solid gold;
-    display: block;
+    border: 3px solid;
+    max-width: 960px;
+    text-align: center;
 }
 
-.p {
-    color: orange;
-    font-size: 50px;
+#navigation, #footer {
+    padding: 15px;
 }
 
-li {
-    display: inline;
+#navigation a {
+    text-transform: uppercase;
 }
 
-li:first-child {
-    margin-right: 50px;
+#navigation a, #footer a {
+    text-decoration: none;
+    transition: 0.1s color ease;
+}
+
+#navigation a:hover, #footer a:hover {
+    border-bottom: 3px solid;
+    text-decoration: none;
+    color: gold;
 }
 
 h1 {
     color: gold;
 }
 
-#navigation > ul > li > ul > li,
-#footer {
+.image {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+#navigation>ul>li>ul>li, #footer {
     color: gold;
     margin: 0 auto;
     position: center;
-    display: list-item;
+    display: hidden;
+    list-style: none;
 }
 
-#navigation > ul > li > ul {
+#navigation>ul>li>ul {
     position: fixed;
     background-color: black;
     left: 175px;
@@ -75,15 +72,18 @@ h1 {
     top: 37px;
 }
 
-#navigation > ul > li:hover > ul {
+#navigation>ul>li:hover>ul {
     border: 3px solid gold;
     display: block;
 }
 
 #content {
-    background:orangered;
+    background: orangered;
     text-align: center;
+    margin: 20px;
     color: white;
+    grid-area: content;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 
 figure {
@@ -97,23 +97,39 @@ li:hover {
 }
 
 #navigation {
-    position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
     position: sticky;
+    grid-area: navigation;
 }
 
-#navigation > ul > li {
+#navigation>ul, #footer>li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Russo One', sans-serif;
+}
+
+#navigation>ul>li {
     position: relative;
-    left: 0;
-    top: 0;
 }
 
 #header {
-    background-color:gray;
+    background-color: gray;
+    grid-area: header;
 }
 
 h1 {
     text-align: center;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+@media (min-width: 800px) {
+    body {
+        grid-template-areas: "navigation header" "navigation content" "navigation footer";
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: minmax(min-content, 15vw) auto;
+    }
 }
