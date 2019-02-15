@@ -66,10 +66,11 @@ h1 {
 #navigation>ul>li>ul {
     position: fixed;
     background-color: black;
-    left: 175px;
+    left: 200px;
     list-style: none;
-    display: fixed;
-    top: 37px;
+    display: hidden;
+    top: 75px;
+    border: 3px solid gold;
 }
 
 #navigation>ul>li:hover>ul {

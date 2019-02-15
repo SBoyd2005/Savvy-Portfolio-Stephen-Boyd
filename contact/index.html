@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption|Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Contact Me</title>
 </head>
@@ -16,19 +17,34 @@
                 <li><a href="../">Home</a></li>
                 <li><a href="../blog/">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="../projects/">Projects</a></li>
+                <li>
+                    <a href="../projects/">Projects</a>
+                    <ul>
+                        <li><a href="">First</a></li>
+                        <li><a href="">Second</a></li>
+                        <li><a href="">Third</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
     <br>
     <div id="header">
         <div class="container">
-            <h1>Contact Information</h1>
+            <h1>Ways to Connect and My Contact Information</h1>
         </div>
     </div>
     <br>
     <div id="content">
         <div class="container">
+            <ul>
+                <a href="https://github.com/SBoyd2005">GitHub</a>
+                <i class="fab fa-github"></i>
+
+                <a href="https://www.linkedin.com/in/stephen-boyd-02b02170/">Linkedin</a>
+                <i class="fab fa-linkedin"></i>
+            </ul>
+
             <form action="https://formspree.io/Stephen.Boyd48@gmail.com" method="POST">
                 <label for="First Name">First Name</label>
                 <input type="text" id="fname" placeholder="Please Enter Your First Name" required>
@@ -50,13 +66,10 @@
     </div>
     <br>
     <br>
-    <div class="container">
-        <div id="footer">&copy;2019 Stephen Boyd Saint Louis, Missouri</div>
-        <ul>
-            <li><a href="https://github.com/SBoyd2005">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/stephen-boyd-02b02170/">Linkedin</a></li>
-        </ul>
-    </div>
+    <div id="footer">
+        <div class="container">
+            <p>&copy;2019 Stephen Boyd Saint Louis, Missouri</p>
+        </div>
     </div>
     </div>
 </body>
