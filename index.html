@@ -69,7 +69,11 @@
     </div>
     <script>
        var name = prompt("Please Enter Your Name: ");
-       
+       // If user leaves prompt blank, throw up a new prompt that says, "For real, enter your name!"//
+       if (name === "") {
+           console.log('blank!')
+       }
+       document.querySelector("h2").textContent = `Hello, ${name}`;
     </script>
 </body>
 
