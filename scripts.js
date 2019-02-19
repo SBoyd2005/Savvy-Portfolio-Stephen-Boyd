@@ -1,11 +1,18 @@
-var nameChecker = function(){
-    var name = prompt('Please Enter Your Name: ');
-    // If user leaves prompt blank, throw up a new prompt that says, "For real, enter your name!"//
+var name;
 
+var blankChecker = function blankChecker(){
     if(name === ''){
         name = prompt('Please Enter Your Name: ');
-    }
- else{
-        document.querySelector('h2').textContent = `Hello, ${name}`;
+
+        blankChecker();
     }
 };
+var nameChecker = function nameChecker(){
+    name = prompt('Please Enter Your Name: ');
+    // If user leaves prompt blank, throw up a new prompt that says, "For real, enter your name!"//
+    blankChecker();
+
+    document.querySelector('h1').textContent = `Hello, ${name}`;
+};
+
+nameChecker();
