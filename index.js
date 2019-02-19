@@ -1,8 +1,10 @@
-var name;
+import Navigation from './src/Navigation';
+
+var originalContent = document.body.innerHTML;
 
 var blankChecker = function blankChecker(){
     if(name === ''){
-        name = prompt('Please Enter Your Name: ');
+        name = prompt('Please Enter Your Nombre: ');
 
         blankChecker();
     }
@@ -16,3 +18,9 @@ var nameChecker = function nameChecker(){
 };
 
 nameChecker();
+
+
+document.body.innerHTML = `
+${Navigation}
+${originalContent}
+`;
