@@ -1,26 +1,28 @@
 import Navigation from './src/Navigation';
+import Content from './src/Footer';
+import Header from './src/Header';
+import Footer from './src/Content';
 
 var originalContent = document.body.innerHTML;
 
-var blankChecker = function blankChecker(){
-    if(name === ''){
-        name = prompt('Please Enter Your Nombre: ');
+var nameChecker = function nameChecker(){
+    var name = prompt('Please Enter Your Nombre: ');
 
-        blankChecker();
+    if(name === ''){
+        nameChecker();
+    }
+    else{
+        document.querySelector('h1').textContent = `Hello, ${name}`;
     }
 };
-var nameChecker = function nameChecker(){
-    name = prompt('Please Enter Your Name: ');
-    // If user leaves prompt blank, throw up a new prompt that says, "For real, enter your name!"//
-    blankChecker();
-
-    document.querySelector('h1').textContent = `Hello, ${name}`;
-};
-
-nameChecker();
 
 
 document.body.innerHTML = `
 ${Navigation}
+${Content}
+${Footer}
+${Header}
 ${originalContent}
 `;
+
+nameChecker();
