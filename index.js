@@ -7,10 +7,10 @@ import nameChecker from './src/Greeter';
 var root = document.querySelector('#root');
 
 root.innerHTML = `
-${Navigation}
-${Content}
-${Footer}
-${Header}
+${Navigation()}
+${Content()}
+${Footer()}
+${Header('Welcome to my Savvy Coders Website!')}
 `;
 
 nameChecker();

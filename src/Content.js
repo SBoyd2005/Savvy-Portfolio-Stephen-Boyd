@@ -1,4 +1,5 @@
-export default `
+export default function Content(){
+    return `
 <div id="content">
 <div class="container">
     <img src="https://avatars2.githubusercontent.com/u/42479421?s=460&v=4"
@@ -17,3 +18,4 @@ export default `
 </div>
 </div>
 `;
+}
