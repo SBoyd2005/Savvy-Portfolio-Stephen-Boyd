@@ -1,4 +1,4 @@
-body {
+#root {
     background-image: url(https://amp.businessinsider.com/images/58f4e5ebf40daef5008b4bb4-960-640.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +128,7 @@ h1 {
 }
 
 @media (min-width: 800px) {
-    body {
+    #root {
         grid-template-areas: "navigation header" "navigation content" "navigation footer";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: minmax(min-content, 15vw) auto;

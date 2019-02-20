@@ -4,14 +4,13 @@ import Header from './src/Header';
 import Footer from './src/Content';
 import nameChecker from './src/Greeter';
 
-var originalContent = document.body.innerHTML;
+var root = document.querySelector('#root');
 
-document.body.innerHTML = `
+root.innerHTML = `
 ${Navigation}
 ${Content}
 ${Footer}
 ${Header}
-${originalContent}
 `;
 
 nameChecker();
