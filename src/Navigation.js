@@ -3,6 +3,8 @@ export default function Navigation(){
 <div id="navigation">
 <ul class="container">
     <li>
+        <a href="/index/">Home</a>
+    <li>
         <a href="/blog/">Blog</a>
     </li>
     <li>
