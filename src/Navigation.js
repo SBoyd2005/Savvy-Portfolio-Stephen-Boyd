@@ -1,25 +1,20 @@
-export default function Navigation(){
+function linkBuilder(linksArr){
+    var i = 0;
+    var linksHTML = '';
+
+    while(i < linksArr.length){
+        linksHTML += `<li><a href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
+        i++;
+    }
+
+    return linksHTML;
+}
+export default function Navigation(state){
     return `
-<div id="navigation">
-<ul class="container">
-    <li>
-        <a href="/index/">Home</a>
-    <li>
-        <a href="/blog/">Blog</a>
-    </li>
-    <li>
-        <a href="/contact/">Contact</a>
-    </li>
-    <li>
-        <a href="/projects/">Projects</a>
-        <ul>
-            <li><a href="">First</a></li>
-            <li><a href="">Second</a></li>
-            <li><a href="">Third</a></li>
-        </ul>
-    </li>
-</ul>
-</div>
+    <div id="navigation">
+    <ul class="container">
+        ${linkBuilder(state.links)}
+    </ul>
 </div>
 `;
 }

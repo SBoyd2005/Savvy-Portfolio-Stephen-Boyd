@@ -4,24 +4,36 @@ import Header from './src/Header';
 import Footer from './src/Content';
 
 var State = {
-    'home': {
+    'Home': {
+        'links': [ 'Blog', 'Contact', 'Projects' ],
         'title': 'Welcome to my Website'
     },
-    'blog': {
+    'Blog': {
+        'links': [ 'Home', 'Contact', 'Projects' ],
         'title': 'Welcome to my Blog!'
     },
-    'contact': {
+    'Contact': {
+        'links': [ 'Home', 'Blog', 'Projects' ],
         'title': 'Welcome to my Contact page!'
     },
-    'projects': {
+    'Projects': {
+        'links': [ 'Blog', 'Contact', 'Projects' ],
         'title': 'Welcome to my Projects!'
     }
 };
 
 var root = document.querySelector('#root');
+var render;
 
-function render(state){
+function navHandler(event){
+    event.preventDefault();
+
+    render(State[event.target.textContent]);
+}
+
+render = function Render(state){
     var links;
+    var i = 0;
 
     root.innerHTML = `
     ${Navigation(state)}
@@ -31,25 +43,11 @@ function render(state){
     `;
 
     links = document.querySelectorAll('#navigation > ul > li > a');
-    links[0].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
+    while(i < links.length){
+        links[i].addEventListener('click', navHandler);
 
-    links[1].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
+        i++;
+    }
+};
 
-    links[2].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-
-    links[3].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-}
-
-render(State.home);
+render(State.Home);
