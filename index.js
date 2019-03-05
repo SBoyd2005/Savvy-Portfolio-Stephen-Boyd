@@ -2,6 +2,7 @@ import Navigation from './src/Navigation';
 import Content from './src/Footer';
 import Header from './src/Header';
 import Footer from './src/Content';
+import { startCase } from 'lodash';
 
 var State = {
     'Home': {
@@ -26,9 +27,10 @@ var root = document.querySelector('#root');
 var render;
 
 function navHandler(event){
-    event.preventDefault();
+    var destination = startCase(event.target.textContent);
 
-    render(State[event.target.textContent]);
+    event.preventDefault();
+    render(State[destination]);
 }
 
 render = function Render(state){
