@@ -1,19 +1,27 @@
-function linkBuilder(linksArr){
-    var i = 0;
-    var linksHTML = '';
+import { lowerCase } from 'lodash';
 
-    while(i < linksArr.length){
-        linksHTML += `<li><a href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
+function buildLinks(links){
+    var i = 0;
+    var linkList = '';
+
+    while(i < links.length){
+        linkList += `
+        <li><a data-navigo href="./${lowerCase(links[i])}">
+        ${links[i]}
+        </a>
+        </li>
+        `;
+
         i++;
     }
 
-    return linksHTML;
+    return linkList;
 }
 export default function Navigation(state){
     return `
     <div id="navigation">
     <ul class="container">
-        ${linkBuilder(state.links)}
+        ${buildLinks(state.links)}
     </ul>
 </div>
 `;
