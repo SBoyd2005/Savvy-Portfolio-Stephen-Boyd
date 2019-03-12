@@ -30,3 +30,5 @@ router
     .on('/:page', navHandler)
     .on('/', () => navHandler({ 'page': 'Home' }))
     .resolve();
+
+fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json()).then((json) => console.log(json));
