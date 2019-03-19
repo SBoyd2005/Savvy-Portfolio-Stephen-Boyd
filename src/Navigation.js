@@ -5,7 +5,7 @@ function buildLinks(links){
     var destination = '';
 
     var linkHTML = links.map((link) => {
-        if(link != 'Home'){
+        if(link !== 'Home'){
             destination = lowerCase(link);
         }
 
@@ -20,11 +20,11 @@ function buildLinks(links){
     return linkHTML;
 }
 
-export default function Navigation(state){
+export default function Navigation(links){
     return `
     <div id="navigation">
     <ul class="container">
-        ${buildLinks(state.links)}
+        ${buildLinks(links)}
     </ul>
 </div>
 `;
