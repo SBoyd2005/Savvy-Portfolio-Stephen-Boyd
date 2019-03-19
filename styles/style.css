@@ -1,5 +1,5 @@
 #root {
-    background-image: url(https://amp.businessinsider.com/images/58f4e5ebf40daef5008b4bb4-960-640.jpg);
+    background-image: url("/Documents/Bay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -65,7 +65,7 @@ h1 {
 
 #navigation>ul>li>ul {
     position: fixed;
-    background-color: black;
+    background-color: orangered;
     left: 200px;
     list-style: none;
     display: hidden;
@@ -115,7 +115,7 @@ li:hover {
 }
 
 #header {
-    background-color: gray;
+    background-color: orangered;
     grid-area: header;
 }
 
