@@ -1,13 +1,5 @@
 export default function Contact(){
     return `
-            <ul>
-                <a href="https://github.com/SBoyd2005">GitHub</a>
-                <i class="fab fa-github"></i>
-
-                <a href="https://www.linkedin.com/in/stephen-boyd-02b02170/">Linkedin</a>
-                <i class="fab fa-linkedin"></i>
-            </ul>
-
             <form action="https://formspree.io/Stephen.Boyd48@gmail.com" method="POST">
                 <label for="First Name">First Name</label>
                 <input type="text" id="fname" placeholder="Please Enter Your First Name" required>
@@ -25,6 +17,14 @@ export default function Contact(){
                 <input type="submit" value="Submit">
                 <input type="reset" value="Clear">
             </form>
+
+            <ul>
+                <a href="https://github.com/SBoyd2005">GitHub</a>
+                <i class="fab fa-github"></i>
+
+                <a href="https://www.linkedin.com/in/stephen-boyd-02b02170/">Linkedin</a>
+                <i class="fab fa-linkedin"></i>
+            </ul>
         </div>
     </div>
     `;

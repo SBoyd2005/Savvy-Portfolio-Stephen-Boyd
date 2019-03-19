@@ -22,7 +22,7 @@ function render(state){
 
                 root.innerHTML = `
                 ${Navigation(state.links)}
-                ${Content(state.posts)}
+                ${Content(state)}
                 ${Footer(state)}
                 ${Header(state.title)}
             `;
