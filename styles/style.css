@@ -140,7 +140,7 @@ h1 {
 
 }
 
-@media (min-width: 700px) {
+@media (max-width: 760px) {
     #root {
         grid-template-areas: "navigation header" "navigation content" "navigation footer";
         grid-template-rows: min-content auto min-content;
