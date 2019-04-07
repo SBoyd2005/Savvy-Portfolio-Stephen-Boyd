@@ -1,5 +1,5 @@
 export default {
     'body': 'Home',
-    'links': [ 'Blog', 'Contact', 'Projects' ],
-    'title': 'Welcome to Stephen\'s Savvy Coder Website'
+    'links': [ 'About', 'Contact', 'Projects' ],
+    'title': 'Stephen P. Boyd'
 };

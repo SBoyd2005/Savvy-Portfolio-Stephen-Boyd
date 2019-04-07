@@ -1,4 +1,4 @@
-export default function Blog(){
+export default function About(){
     return `
         <div id="image">
             <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/36699904_10155236334117134_410501880251154432_n.jpg?_nc_cat=105&_nc_ht=scontent-ort2-2.xx&oh=85cb5427474d99155de38c856fe806b6&oe=5CEC252A"

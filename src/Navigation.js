@@ -23,9 +23,9 @@ function buildLinks(links){
 export default function Navigation(links){
     return `
     <div id="navigation">
-    <ul class="container">
+    <div class="container">
         ${buildLinks(links)}
-    </ul>
+</div>
 </div>
 `;
 }
