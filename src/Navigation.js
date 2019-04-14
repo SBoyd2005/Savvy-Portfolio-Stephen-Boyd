@@ -9,11 +9,11 @@ function buildLinks(links){
             destination = lowerCase(link);
         }
 
-        return `<li>
+        return `<ul>
         <a data-navigo href="./${destination}">
         ${link}
         </a>
-        </li>
+        </ul>
      `;
     }).join(' ');
 

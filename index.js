@@ -21,19 +21,19 @@ function render(state){
                 state.posts = response.data;
 
                 root.innerHTML = `
-                ${Navigation(state.links)}
-                ${Content(state)}
-                ${Footer(state)}
                 ${Header(state.title)}
+                ${Navigation(state.links)}
+                ${Footer(state)}
+                ${Content(state)}
             `;
             });
     }
 
     root.innerHTML = `
-    ${Navigation(state.links)}
-    ${Content(state.posts)}
-    ${Footer(state)}
     ${Header(state.title)}
+    ${Navigation(state.links)}
+    ${Footer(state)}
+    ${Content(state.posts)}
 `;
 
     router.updatePageLinks();

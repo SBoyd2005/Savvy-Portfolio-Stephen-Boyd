@@ -3,15 +3,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border: 10px solid gold;
+    border: 20px solid gold;
     font-size: 20px;
-    display: grid;
-    grid-template-rows: min-content min-content auto min-content;
-    grid-auto-columns: (min-content, 17vw) auto;
-    grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
+    display: inline-flexbox;
     margin: 0;
-    height: 97%;
-    width: 97%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 ul {
@@ -31,7 +28,6 @@ ul {
 
 #navigation, #footer {
     padding: 15px;
-    list-style-type: none;
 }
 
 #navigation a {
@@ -71,6 +67,7 @@ h1 {
     background-color: gold;
     left: 200px;
     list-style-type: none;
+    list-style: none;
     display: hidden;
     top: 75px;
     border: 3px solid gold;
@@ -101,20 +98,15 @@ li:hover {
 
 #navigation {
     top: 0;
-    position: sticky;
-    width: 100%;
+    width: 98%;
 }
 
 #navigation>ul, #footer>li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: flexbox;
+    flex-direction: row;
     font-family: 'PT Sans Caption', sans-serif;
 }
 
-#navigation>ul>li {
-    position: relative;
-}
 
 #header {
     grid-area: header;
@@ -126,17 +118,14 @@ h1 {
 
 #footer {
     grid-area: footer;
-    overflow: hidden;
-    text-align: center;
-    display: fixed;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     background-color: black;
     color: gold;
     margin: 0 auto;
     border: 3px solid;
-    text-align: center;
     width: 925px;
-    height: 20px;
+    height: 25px;
 
 }
 
