@@ -136,3 +136,10 @@ h1 {
         grid-template-columns: minmax(min-content, 15vw) auto;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .image { 
+        max-height: 25%;
+        max-width: 25%;
+    }
+}
