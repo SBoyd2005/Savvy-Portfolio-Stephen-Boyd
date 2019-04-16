@@ -22,7 +22,7 @@ ul {
     color: gold;
     margin: 0 auto;
     border: 3px solid;
-    max-width: 960px;
+    max-width: 1024px;
     text-align: center;
 }
 
@@ -129,7 +129,7 @@ h1 {
 
 }
 
-@media (max-width: 479px) {
+@media (max-width: 1024px) {
     #root {
         grid-template-areas: "navigation header" "navigation content" "navigation footer";
         grid-template-rows: min-content auto min-content;
