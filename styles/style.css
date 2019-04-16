@@ -50,8 +50,8 @@ h1 {
 }
 
 .image {
-    max-height: 25%;
-    max-width: 25%;
+    max-height: auto;
+    max-width: auto;
 }
 
 #navigation>ul>li>ul>li, #footer {
