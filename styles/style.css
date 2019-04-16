@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    border: 20px solid gold;
+    border: 12px solid gold;
     font-size: 20px;
     display: inline-flexbox;
     margin: 0;
@@ -50,8 +50,8 @@ h1 {
 }
 
 .image {
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 25%;
+    max-width: 25%;
 }
 
 #navigation>ul>li>ul>li, #footer {
@@ -124,7 +124,7 @@ h1 {
     color: gold;
     margin: 0 auto;
     border: 3px solid;
-    width: 76%;
+    width: 75%;
     height: 25px;
 
 }
@@ -137,9 +137,3 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    image { 
-        max-height: 25%;
-        max-width: 25%;
-    }
-}
