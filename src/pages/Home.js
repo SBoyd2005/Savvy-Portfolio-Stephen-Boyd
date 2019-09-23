@@ -9,11 +9,8 @@ export default function Home(){
     <i>“Take positive care of your mind, and it would surely take positive care of your life.”
         ― Edmond Mbiaka</i>
     <h3>
-        <p>I am a motivated young man, defined through a lifetime of personal and professional experience. I
-            live in
-            St. Louis, Missouri and have obtained an extensive academic background, along with a diverse
-            professional
-            background. I strive to constantly improve each day mind, body, and soul everyday. </p>
+        <p>I am a software engineer, based St. Louis, Missouri. I have obtained an extensive academic background, along with a diverse
+            professional background. I strive to constantly improve each day mind, body, and soul everyday. </p>
     </h3>
     `;
 }

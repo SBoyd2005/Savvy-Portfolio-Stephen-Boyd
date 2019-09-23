@@ -22,7 +22,7 @@ ul {
     color: gold;
     margin: 0 auto;
     border: 3px solid;
-    max-width: 1024px;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -51,7 +51,6 @@ h1 {
 
 .image {
     height: auto;
-    width: auto;
     max-width: 325px;
 }
 
