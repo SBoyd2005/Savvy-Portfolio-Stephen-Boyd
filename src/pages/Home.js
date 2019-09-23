@@ -1,7 +1,9 @@
 export default function Home(){
     return `
+    <div id = "img">
     <img src="https://avatars2.githubusercontent.com/u/42479421?s=460&v=4"
         alt="Me At Land's End San Franciso, CA" class="center">
+    </div>
     <br>
     <figure>Land's End, San Francisco, CA</figure>
     <i>“Take positive care of your mind, and it would surely take positive care of your life.”

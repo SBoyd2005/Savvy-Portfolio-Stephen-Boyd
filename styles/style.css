@@ -50,8 +50,9 @@ h1 {
 }
 
 .image {
-    max-height: auto;
-    max-width: auto;
+    height: auto;
+    width: auto;
+    max-width: 325px;
 }
 
 #navigation>ul>li>ul>li, #footer {
@@ -125,7 +126,7 @@ h1 {
     margin: 0 auto;
     border: 3px solid;
     width: 75%;
-    height: 25px;
+    height: 22px;
 
 }
 

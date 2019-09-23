@@ -12,13 +12,13 @@ var root = document.querySelector('#root');
 
 
 function render(state){
-    if(!state.links.includes('Blog')){
-        state.posts = [];
+    if(!state.links.includes('Weather')){
+        state.weather = [];
 
         axios
             .get('https://jsonplaceholder.typicode.com/posts')
             .then((response) => {
-                state.posts = response.data;
+                state.weather = response.data;
 
                 root.innerHTML = `
                 ${Header(state.title)}
