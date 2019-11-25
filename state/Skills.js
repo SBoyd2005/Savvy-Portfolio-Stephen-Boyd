@@ -1,5 +1,5 @@
 export default {
     'body': 'Skills',
-    'links': [ 'Home' ,'About', 'Contact', 'Projects' ],
+    'links': [ 'Home' ,'About', 'Projects' ],
     'title': 'Skills'
 };
