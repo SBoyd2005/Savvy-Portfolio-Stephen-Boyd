@@ -43,7 +43,7 @@ ul {
 }
 
 h1 {
-    color: gold;
+    color: white;
 }
 
 .image {
@@ -117,11 +117,11 @@ h1 {
     grid-area: footer;
     display: flex;
     justify-content: space-around;
-    background-color: black;
-    color: gold;
+    background-color:#D3D3D3;
+    color: #008080;
     margin: 0 auto;
     border: 3px solid;
-    width: 75%;
+    max-width: 780px;
     height: 22px;
 
 }
