@@ -3,10 +3,10 @@ export default function Header(){
 <div id="header">
         <div class="container">
             <h1>Stephen P. Boyd</h1>
+            <h2>Software Engineer, Saint Louis, Missouri</h2>
             <div id = "img">
-            <img src= "./Boyd.jpg">
+            <img src= "Boyd.jpg">
             </div>
-            <h2>Quality Assurance Software Engineer, Saint Louis, Missouri</h2>
         </div>
     </div>
 `;
