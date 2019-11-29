@@ -1,5 +1,6 @@
 #root {
-    border: 12px solid gold;
+    border: 12px solid #008080;
+    background-color: #D3D3D3;
     font-size: 20px;
     display: inline-flexbox;
     margin: 0;
@@ -15,10 +16,10 @@ ul {
 
 .container {
     background-color: black;
-    color: gold;
+    color: #008080;
     margin: 0 auto;
     border: 3px solid;
-    max-width: 100%;
+    max-width: 50%;
     text-align: center;
 }
 
@@ -125,7 +126,7 @@ h1 {
 
 }
 
-@media (max-height: 100%) {
+@media (max-width: 780px) {
     #root {
         grid-template-areas: "navigation header" "navigation content" "navigation footer";
         grid-template-rows: min-content auto min-content;

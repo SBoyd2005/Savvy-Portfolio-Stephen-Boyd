@@ -1,8 +1,7 @@
 export default function Home(){
     return `
     <div id = "img">
-    <img src="https://avatars2.githubusercontent.com/u/42479421?s=460&v=4"
-        alt="Me At Land's End San Franciso, CA" class="center">
+    <img src= "Boyd.jpg">
     </div>
     <br>
     <figure>Land's End, San Francisco, CA</figure>
