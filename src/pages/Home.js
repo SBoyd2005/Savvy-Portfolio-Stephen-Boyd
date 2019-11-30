@@ -2,7 +2,7 @@ export default function Home(){
     return `
     <div id = "img">
         <img src="Boyd.jpg"
-            alt="Stephen Boyd" class="center" />
+            alt="Stephen Boyd" class="center">
         </div>
     <h3>
         <p>I am a Software Engineer, based St. Louis, Missouri. I have obtained an extensive academic background, along with a diverse
