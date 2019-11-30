@@ -12,7 +12,7 @@ export default function About(){
         </p>
         <br>
         <div id = "img">
-        <img src="https://www.facebook.com/photo.php?fbid=10155346884702134&set=pb.646542133.-2207520000.0.&type=3&theater"
+        <img src= url("https://www.facebook.com/photo.php?fbid=10155346884702134&set=pb.646542133.-2207520000.0.&type=3&theater")
             alt="Napa Valley on a Beautiful Day, Sonoma, California" class="center" />
         </div>
         <p>
