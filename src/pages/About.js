@@ -2,8 +2,7 @@ export default function About(){
     return `
             <div id = "img">
             <div class="container">
-            <img src="https://www.facebook.com/photo.php?fbid=10156150264192134&set=pob.646542133&type=3"
-                alt="Kelly Chase and myself with the Stanley Cup, Saint Louis, Missouri" class="center" >
+            <img src="Images/Stanley.jpg" alt="Kelly Chase and myself with the Stanley Cup, Saint Louis, Missouri" class="center" >
             </div>
             </div>
         <br>
