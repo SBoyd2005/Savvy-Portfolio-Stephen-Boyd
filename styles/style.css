@@ -1,6 +1,6 @@
 #root {
     border: 12px solid #008080;
-    background-image: "stl.jpg";
+    background-image: "..\stl.jpg";
     font-size: 20px;
     display: inline-flexbox;
     margin: 0;
